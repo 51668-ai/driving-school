@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informational website for an Extreme Driving School">
+  <title>Extreme Driving School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" hidden>
+
+  <header class="site-header">
+    <a class="logo" href="#top">Extreme Driving School</a>
+    <p class="contacts">+7 (700) 000-00-00 · info@extreme-drive.kz</p>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="burger" aria-label="Open menu">☰</label>
+    <nav aria-label="Main navigation">
+      <a href="#programs">Programs</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#instructors">Instructors</a>
+      <a class="btn" href="#signup">Sign Up for the Race Track</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Learn to Fully Control the Car in Any Conditions</h1>
+      <p>Safety programs, a fleet of sports cars and track sessions with certified instructors.</p>
+      <a class="btn btn-cta" href="#programs">Choose a Course</a>
+    </section>
+
+    <section id="programs" class="block">
+      <h2>Training Tracks</h2>
+      <div class="cards">
+        <article><h3>Defensive Driving Basics</h3><p>20 hours of practical driving</p></article>
+        <article><h3>Winter Drift</h3><p>16 hours of practical driving</p></article>
+        <article><h3>Sports Track</h3><p>24 hours of practical driving</p></article>
+      </div>
+    </section>
+
+    <section id="fleet" class="block">
+      <h2>Fleet</h2>
+      <p>Rear-wheel-drive coupes, all-wheel-drive sedans and winter-equipped training cars with safety cages.</p>
+    </section>
+
+    <section id="instructors" class="block">
+      <h2>Instructors</h2>
+      <p>Racing drivers and certified safety trainers with more than ten years of track experience.</p>
+    </section>
+
+    <section id="signup" class="block">
+      <h2>Sign Up for the Race Track</h2>
+      <form action="#" method="post">
+        <label>Driver's Full Name
+          <input type="text" name="name" placeholder="Full name" required minlength="3"></label>
+        <label>Driving Experience (in years)
+          <input type="number" name="experience" placeholder="0" min="0" max="80" required></label>
+        <label>Phone Number
+          <input type="tel" name="phone" placeholder="+7 700 000 00 00" pattern="[0-9+ ()-]{10,}" required></label>
+        <label>Email
+          <input type="email" name="email" placeholder="you@example.com" required></label>
+        <fieldset>
+          <legend>Vehicle</legend>
+          <label class="radio"><input type="radio" name="car" value="own" required> Own</label>
+          <label class="radio"><input type="radio" name="car" value="school"> School Car</label>
+        </fieldset>
+        <button type="submit" class="btn btn-cta">Send Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer navigation">
+      <a href="#programs">Programs</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#instructors">Instructors</a>
+      <a href="https://www.fia.com" rel="noopener">FIA</a>
+      <a href="https://www.fiakazakhstan.kz" rel="noopener">Motorsport Federation of Kazakhstan</a>
+    </nav>
+    <section>
+      <h2>Safety Regulations</h2>
+      <p>Helmet and seat belt are mandatory. Follow the instructor's commands. Alcohol and drugs are prohibited on the track.</p>
+    </section>
+    <p class="legal">© 2026 Extreme Driving School. All rights reserved. Educational project.</p>
+    <label class="theme-switch"><input type="checkbox" id="theme-switch-ui" onclick="document.getElementById('theme-toggle').click()"> Light theme</label>
+  </footer>
+
+  <a class="btn btn-cta mobile-cta" href="#signup">Sign Up</a>
+</body>
+</html>
