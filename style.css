@@ -105,3 +105,6 @@ fieldset { border: 0.1rem solid var(--line); border-radius: 0.35rem; display: fl
   .site-footer { grid-template-columns: 2fr 3fr; padding: 2rem 5%; }
   .legal, .theme-switch { grid-column: 1 / -1; }
 }
+.thanks { display: none; margin-top: 1rem; padding: 1rem; border-radius: 0.4rem; background: #1f6f3a; color: #fff; font-weight: 600; }
+.thanks:target { display: block; }
+html { scroll-padding-top: 6rem; }
